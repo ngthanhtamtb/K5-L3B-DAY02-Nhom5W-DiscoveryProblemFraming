@@ -1,16 +1,13 @@
 # Báo cáo cá nhân — 2A202603933_NguyenThanhTam
 
-> Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
-> Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
-> Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
-
 ## 1. Thông tin học viên
 
-- Họ tên: Nguyễn Thành Tâm
-- MSSV: 2A202603933
-- Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm: Nhom5W
-- Link repo nhóm: https://github.com/VinUni-AI20k/K5-L3-Day02-DiscoveryProblemFraming
+- Họ tên: **Nguyễn Thành Tâm**
+- MSSV: **2A202603933**
+- Lớp: **K5 - Level 3 (L3B)**
+- Tên nhóm: **Nhom5W**
+- Link repo nhóm: https://github.com/ngthanhtamtb/K5-L3B-DAY02-Nhom5W-DiscoveryProblemFraming
+- Vai trò trong nhóm: **Nhóm trưởng**, điều phối thời gian, dẫn dắt hội tụ nhóm & xây dựng cây OST (CP3), phân tích mức can thiệp AI, AI Canvas, Problem Statement v1 & bộ 10 test case đánh giá (CP6).
 
 ---
 
@@ -177,7 +174,7 @@ Phương án quay về: AI so sánh sai/miss → kỹ sư đọc thủ công the
 
 - **Card số:** #1 — Nhật ký thi công hằng ngày
 - **Vì sao:** Lặp lại mỗi ngày làm việc (5–6 ngày/tuần) → ROI cao nhất nếu giải được; bottleneck gõ lại dữ liệu rõ ràng, dễ đo; bắt buộc pháp lý (Nghị định 06/2021) nên người dùng không thể bỏ bước này; giải pháp voice-to-text + AI parse có thể pilot nhanh chỉ cần điện thoại, không cần đầu tư hệ thống.
-- **Câu hỏi muốn nhóm phản biện:** (1) Voice-to-text tiếng Việt kỹ thuật xây dựng có đủ chính xác không (tên hạng mục, số liệu)? (2) Kỹ sư hiện trường có chịu thay đổi thói quen ghi sổ tay không? (3) Nếu AI parse sai số liệu khối lượng và kỹ sư không phát hiện → ai chịu trách nhiệm?
+- **Câu hỏi muốn nhóm phản biện:** (1) Kỹ sư hiện trường có chịu bỏ thói quen ghi sổ tay không? (2) Nếu số liệu khối lượng bị parse sai mà kỹ sư không phát hiện → ai chịu trách nhiệm?
 
 ### AI đã phản biện card thế nào
 
@@ -194,29 +191,31 @@ Phương án quay về: AI so sánh sai/miss → kỹ sư đọc thủ công the
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| **Pitch Problem Card** | Trình bày 3 Problem Cards ngành xây dựng (#4 Nhật ký thi công hằng ngày, #5 Gom hồ sơ nghiệm thu, #6 Đọc bản vẽ revision), trọng tâm pitch Card #1 (ứng với candidate #4 trong bảng nhóm). | Candidate #4 lọt vào shortlist 3 bài toán đại diện 3 bối cảnh để chấm điểm (đạt 23/35 điểm); nhóm thống nhất giữ làm hướng mở rộng về sau vì trong thời gian lab chưa tiếp cận được kỹ sư hiện trường để kiểm chứng số liệu `[GT]`. |
+| **Phản biện bài của bạn khác** | **Câu hỏi tôi đã đặt:**<br>1. Hỏi Lê Tuấn Đạt (candidate #1 — Nhận xét 70 em): *"Giáo viên duyệt 70 bản nháp trong 35 phút có thực tế không, hay sẽ đọc lướt rồi bấm gửi?"*<br>2. Hỏi Nguyễn Huy Tấn (candidate #8 — Đối chiếu bài lab với rubric): *"RUBRIC.md đã như một checklist, tự tick theo đó có đủ không?"*<br>3. Hỏi Nguyễn Huy Tấn (candidate #9 — Tìm tin nhắn cũ trên Discord): *"Discord đã có ô tìm kiếm, vậy mất 10 phút là do tìm kiếm kém hay do không nhớ từ khóa?"* | - Câu hỏi 1 trở thành **Giả định #4 (Usability Risk)** trong Assumption Map (mục 3.1) và mục 8.1 của `group_report.md`, buộc nhóm thiết kế giao diện duyệt dạng thẻ, đo thực tế thời gian duyệt trong pilot và đặt ngưỡng dừng nếu phải viết lại > 35%.<br>- Câu hỏi 2 & 3 giúp nhóm loại sớm candidate #8 (No AI checklist đã đủ) và #9 (Discord đã có tìm kiếm, pain thực tế nhỏ) ở mục 2.4. |
+| **Nhận phản biện** | **Câu hỏi tôi nhận được:**<br>1. Lê Tuấn Đạt hỏi (#4 Nhật ký thi công): *"Con số 45–60 phút/ngày lấy từ đâu, đã hỏi kỹ sư hiện trường nào chưa?"*<br>2. Nguyễn Huy Tấn hỏi (#5 Hồ sơ nghiệm thu): *"Nghẽn là do chờ người khác gửi hồ sơ; có nhắc nhở thì họ có gửi nhanh hơn không, hay checklist + thư mục chung là đủ?"*<br>3. Lê Tuấn Đạt hỏi (#6 Bản vẽ revision): *"Bản vẽ đang ở dạng PDF hay DWG? Nếu là DWG thì phần mềm CAD có sẵn chức năng so revision chưa?"* | **Tôi đã sửa gì:** Thừa nhận minh bạch cả 3 card xây dựng mới dừng ở mức giả thuyết `[GT]`, trong đó card #5 có thể giải phần lớn bằng No AI (checklist + folder Drive chung) và card #6 phụ thuộc định dạng CAD/PDF. Tôi chủ động chấm bài mình 2/5 ở tiêu chí "Pain có bằng chứng" & "Nhóm hiểu domain", đồng thuận nhường quyền ưu tiên cho candidate #1 (GV-A) có người thật kiểm chứng ngay ở CP4. |
+| **Gom cluster / cây OST** | Phụ trách chính CP3: Điều phối nhóm gom 9 candidate từ 3 bối cảnh theo **pattern công việc** thành 4 cluster (A, B, C, D); trực tiếp vẽ sơ đồ Mermaid cây Opportunity Solution Tree rút gọn (mục 2.3). | Giúp nhóm tìm ra điểm hội tụ chung ở Cluster A (*chép dữ liệu có sẵn sau mỗi chu kỳ thành báo cáo cá nhân hóa*) và lọc bỏ dứt điểm 4 "solution đội lốt opportunity" (OCR chấm bài giấy, agent tự gửi báo cáo công trường, app gom 4 kênh, chatbot trả lời phụ huynh). |
+| **Chọn candidate problem** | Thiết lập bảng chấm điểm shortlist 7 tiêu chí (mục 2.4), điều phối xử lý bất đồng về phạm vi đề tài #1. | Chốt chọn candidate #1 (34/35 điểm) có lập luận loại trừ rõ cho cả 8 bài còn lại; thống nhất cắt bỏ hoàn toàn tính năng OCR chấm bài giấy khỏi đề tài chung. |
+| **Kiểm chứng / research** | Hỗ trợ Lê Tuấn Đạt thực hiện CP4 Research (mục 3.3): Cùng mở và đối chiếu trực tiếp trang chủ 4 công cụ (Azota, K12Online, Khan Academy, ChatGPT) ngày 09/11/2026. | Xác nhận khoảng trống thực tế: các nền tảng Việt Nam mạnh về chấm điểm/thống kê nhưng trang chủ không nêu bước chuyển danh sách câu sai thành nhận xét tiến trình 3 phần; giúp nhóm chốt hướng không xây lại app chấm thi mà chỉ làm Workflow nối sau bước chấm. |
+| **Quy trình nhóm** | Cùng Đạt và Tấn rà soát quy trình Before (315') và After (115', tiết kiệm 200' ~ 63%), phân định rạch ròi vai trò Rule — AI Workflow — Con người (mục 4). | Giữ nguyên 65 phút cho bước giáo viên chấm bài + nhập mã câu sai (không ép tự động hóa chỗ không nghẽn) và thiết lập chốt chặn HITL 35 phút ở Bước 5 kèm phương án Fallback về mẫu nhận xét cũ. |
+| **Problem Statement** | Hỗ trợ Đạt rà soát Problem Statement v0 (CP5) và phụ trách chính nâng cấp lên **Problem Statement v1 + Bộ tiêu chí đánh giá & 10 Test Case Eval** (CP6, mục 7). | Bổ sung 2 metric chất lượng vào v1 (tỉ lệ viết lại < 15%, > 80% phụ huynh thấy rõ phần cần ôn), siết Boundary bảo mật (chỉ truyền mã học sinh cho AI, họ tên thật do Rule chèn sau), hoàn thiện 4 tiêu chí đánh giá và bộ 10 test case Ground Truth (TC01–TC10) đạt chuẩn 40–90 từ. |
+| **Mức can thiệp AI** | Phụ trách chính CP6 (mục 6): Xây dựng ma trận Độ mơ hồ × Độ phức tạp, bảng so sánh 4 mức (No AI / Rule / Workflow / Agent), AI Canvas rút gọn và trả lời 2 câu hỏi Google PAIR. | Chứng minh rõ vì sao dùng Rule cho Bước 1 & 3, chỉ dùng AI Workflow ở Bước 4; chốt nguyên tắc **Augment** và thiết kế chống lỗi **Báo nhầm (False Positive)** vì bịa lỗi sai của học sinh gây hậu quả sư phạm nghiêm trọng hơn bỏ sót. |
+| **Quyết định** | Hỗ trợ Nguyễn Huy Tấn rà soát bảng đánh giá 4 rủi ro (Value, Usability, Feasibility, Viability) và thiết kế kế hoạch Pilot + ngưỡng dừng (mục 8). | Thống nhất quyết định **Go phạm vi nhỏ** (Pilot 4 tuần / 2 chu kỳ trên 1 lớp 35 học sinh bằng Google Sheets + Prompt chuẩn), chốt 2 điều kiện tiên quyết trước pilot và 3 ngưỡng dừng định lượng (Stop Conditions). |
 
 ---
 
 ## 5. Dùng AI
 
+*(Lưu ý: Ở CP3 Pitch & phản biện và CP4 Phỏng vấn người thật, nhóm tuân thủ quy định không sử dụng AI).*
+
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| **CP1 Scan** | Dùng AI gợi ý mở rộng góc nhìn theo 4 lăng kính cho bối cảnh công trường Xây dựng và đóng vai kỹ sư giải pháp để rà soát rủi ro giả định cho 7 job stories. | Giúp hệ thống hóa Assumption Risk Map, nhắc tách bạch giữa quan sát thực tế (quy định Nghị định 06/2021/NĐ-CP) với các con số ước lượng chưa có log bấm giờ thực địa. | Gợi ý bài toán phạm vi quá rộng không vừa sức lab 4 tiếng (*"Tự động hóa toàn bộ quy trình đấu thầu và lựa chọn nhà thầu"*) và có xu hướng đưa ra con số ước lượng nghe rất chắc chắn dù chưa phỏng vấn thực tế. | Loại bỏ ý tự động hóa đấu thầu; giữ lại 7 job stories sát nghiệp vụ công trường và chủ động gắn nhãn `[GT]` minh bạch kèm rủi ro cần verify cho mọi con số ước lượng. |
+| **CP2 Problem Card** | Hỗ trợ chuẩn hóa cấu trúc 3 Problem Cards xây dựng và đóng vai PM hoài nghi để phản biện Card #1 (Nhật ký thi công). | Chỉ đúng điểm yếu: baseline 50 phút mới dựa trên ước lượng và rủi ro voice-to-text tiếng Việt nhận diện sai thuật ngữ kỹ thuật xây dựng, tên hạng mục. | Đề xuất hướng làm Agent tự động gửi báo cáo nhật ký về văn phòng mỗi tối và mặc định kỹ sư được tự đổi mẫu biểu báo cáo. | Bác bỏ hướng Agent tự gửi, giữ Boundary bắt buộc kỹ sư review trước khi gửi; bổ sung phương án quay về Excel mẫu cũ và đưa câu hỏi về quyền sở hữu biểu mẫu của CĐT vào mục "Điều còn chưa chắc". |
+| **CP4 Research** | Tìm kiếm và đối chiếu các công cụ EdTech tương đương cho bài toán của GV-A (Azota, K12Online, Khan Academy, ChatGPT). | Gợi ý nhanh danh sách các nền tảng sát bối cảnh trường phổ thông Việt Nam và mô hình gắn thẻ kỹ năng (Competency Tagging) của Khan Academy. | Bị **ảo giác (hallucination)** nói quá rằng *"Azota và K12Online hiện đã có sẵn AI tự động phân tích lỗ hổng kiến thức và viết nhận xét cá nhân hóa gửi phụ huynh"*. | Không tin ngay câu trả lời của AI: cùng Đạt trực tiếp mở `azota.vn` và `k12online.vn` (ngày 09/11/2026) để kiểm tra, gạch bỏ nhận định ảo giác của AI và ghi đúng thực tế là trang chủ chỉ nêu chấm trắc nghiệm/thống kê điểm, chưa nêu tính năng soạn nhận xét tiến trình dài hạn. |
+| **CP5 Quy trình** | Hỗ trợ vẽ sơ đồ Mermaid Before (315') / After (115') và dùng prompt phản biện tìm lỗ hổng quy trình tương lai. | Tạo nhanh bố cục sơ đồ trực quan, phân biệt màu sắc rõ giữa các bước Rule, AI Workflow và Con người (HITL). | Đưa ra 2 gợi ý quá đà theo hướng "ham tự động hóa": (1) đòi dùng LLM tự sinh 3 bộ câu hỏi mới ở Bước 1 thay vì Rule, và (2) đòi gộp Bước 4 + Bước 5 cho AI tự gửi thẳng tin nhắn phụ huynh qua API để ép thời gian từ 115' xuống 60'. | Bác bỏ cả 2 đề xuất của AI: giữ Bước 1 là **Rule** (vì đề định kỳ bắt buộc lấy từ ngân hàng đã thẩm định của trường) và giữ chặt Bước 5 là con người duyệt 35' (tổng 115') theo lệnh cấm máy tự gửi của Tổ trưởng chuyên môn. |
+| **CP5–6 Problem Statement** | Dùng prompt *"Chỉ ra lỗ hổng trong Problem Statement v0, không viết lại thay tôi"* trước khi nâng cấp lên bản v1. | Chỉ ra hợp lý việc bản v0 chỉ đo tốc độ thời gian (315' → < 120'), thiếu thước đo chất lượng bản nháp và sự đón nhận của phụ huynh. | Gợi ý bị lệch gây phình phạm vi (scope creep): khuyên mở rộng cho *"toàn bộ các môn học THPT (cả tự luận Văn, Sử, Địa) và tích hợp chatbot AI giải đáp phụ huynh 24/7"*; đồng thời chưa tính đến rủi ro lộ tên thật học sinh (PII). | Đồng ý bổ sung 2 metric chất lượng vào v1 (tỉ lệ viết lại < 15%, phụ huynh thấy rõ phần cần ôn > 80%) và ẩn danh họ tên học sinh ở Boundary; bác bỏ hoàn toàn việc mở rộng sang môn xã hội tự luận và chatbot 24/7, khóa chặt ở Toán/KHTN có ma trận K1–K3. |
+| **CP6 Mức can thiệp / quyết định** | Phản biện lựa chọn mức can thiệp AI và hỗ trợ nháp khung tình huống cho bộ 10 Test Case đánh giá (Eval Set TC01–TC10). | Giúp bao phủ nhanh nhiều trường hợp biên cho bộ test case (học sinh đạt 10/10, tụt điểm khi sang hình học không gian mới, hết giờ bỏ trống câu cuối, sai câu dễ do tính nhẩm). | Ban đầu gợi ý chọn mô hình **Autonomous Agent** tự hành từ khâu lấy ngân hàng đề đến gửi tin cho phụ huynh; ở TC04 (học sinh 10/10, không sai câu nào) AI áp máy móc khung 3 phần dễ gượng ép tìm "lỗ hổng" và đếm lệch số từ tiếng Việt. | Kiên quyết bác bỏ Agent tự hành để kéo mức can thiệp về **Workflow (HITL)** an toàn sư phạm; thêm ngoại lệ vào Tiêu chí 2 (*"Học sinh không sai câu nào thì phần (2) được bỏ"*) và tự đếm tay chuẩn hóa toàn bộ 10 test case trong khoảng 47–68 từ (chuẩn 40–90 từ). |
 
 ---
 
@@ -226,20 +225,42 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi nghe Đạt trình bày các bài toán của giáo viên THPT và Tấn chia sẻ vấn đề trôi thông báo, tôi thấy là dù 3 thành viên xuất phát từ 3 lĩnh vực hoàn toàn khác nhau (trường phổ thông, khóa học công nghệ, công trường xây dựng), bản chất nỗi đau lại hội tụ về cùng một vài pattern công việc lặp lại — điển hình là việc phải tra cứu dữ liệu có sẵn sau mỗi chu kỳ rồi gõ tay thành báo cáo cho từng người nhận. Tôi cũng học được từ bài của Đạt tầm quan trọng của việc chọn bài toán tiếp cận được người thật ngay trong thời gian ngắn, còn bài của Tấn cho tôi thấy một góc nhìn rất thực tế: có những vấn đề gây phiền toái cho cả trăm người mỗi ngày nhưng cách giải đúng đắn nhất lại là quy chuẩn hóa quy trình (No AI — thống nhất một nguồn thông báo chính thức) chứ không phải cố xây thêm công cụ AI.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm đã vấp vào bẫy "solution-first" ngay ở giai đoạn đầu: bản phác thảo đầu tiên cho bài toán giáo viên từng ôm đồm cả ý tưởng dùng OCR nhận diện chữ viết tay để chấm bài tự động, hay ở bài thông báo của Tấn ban đầu cũng dễ nghĩ ngay tới việc làm một app gom tin từ 4 kênh. Nhóm nhận ra điều này ở hai thời điểm: lần một là khi tôi điều phối vẽ cây OST ở CP3, cả nhóm rà soát và phải gạch bỏ 4 ý tưởng thực chất là tính năng đội lốt cơ hội; lần hai quyết định nhất là khi Tấn và Đạt mang kết quả phỏng vấn GV-A về ở CP4 — cô giáo nói rõ việc chấm 70 bài theo barem chỉ mất 45 phút và không hề làm cô mệt, thứ làm cô "sợ phát khóc" tối Chủ nhật là ngồi nhớ lỗi cũ từng học sinh để gõ nhận xét. Ngay lúc đó, nhóm thống nhất cắt bỏ hoàn toàn OCR, giữ nguyên bước chấm bài cho giáo viên và thu hẹp phạm vi chỉ từ sau khi đã có điểm và mã câu sai.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi đã thay đổi quyết định rất lớn ở CP3. Trước buổi họp nhóm, tôi đã đầu tư xây dựng kỹ bộ 7 job stories và 3 Problem Cards trong lĩnh vực xây dựng, tâm đắc nhất là Card Nhật ký thi công hằng ngày vì có căn cứ pháp lý Nghị định 06/2021 rõ ràng và tần suất lặp lại mỗi tối. Tuy nhiên khi pitch, Đạt hỏi thẳng: *"Con số 45–60 phút/ngày lấy từ đâu, đã hỏi kỹ sư hiện trường nào chưa?"*, còn Tấn chất vấn ở card hồ sơ nghiệm thu rằng nếu nghẽn do chờ người khác gửi file thì liệu một checklist kèm thư mục chung đã đủ chưa. Những câu hỏi đó chạm đúng điểm yếu cốt tử: toàn bộ số phút trong bài xây dựng của tôi đều đang gắn nhãn giả thuyết `[GT]` và trong vài tiếng làm lab, cả nhóm không thể tìm đâu ra kỹ sư công trường để phỏng vấn theo The Mom Test. Với vai trò nhóm trưởng, thay vì cố bảo vệ bài mình, tôi chủ động chấm card của mình 2/5 ở cột bằng chứng và đồng thuận cùng nhóm chọn đề tài GV-A của Đạt để đào sâu.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Kết quả kiểm chứng làm tôi bất ngờ. Qua biên bản phỏng vấn, tôi không ngờ giáo viên chỉ gõ nhận xét thật được cho khoảng 25–30 em đầu tiên rồi kiệt sức phải copy câu mẫu từ file Word, dẫn đến ước tính của tổ trưởng là khoảng 70% sổ liên lạc bị rập khuôn, kéo theo cảnh phụ huynh nhận điểm 7.5 của con vẫn phải chụp màn hình nhắn Zalo hỏi cô giáo vào tối muộn — tức là cách làm đối phó hiện tại vô tình đẻ thêm việc ngược lại cho chính giáo viên. 
+Ở bước Research, khi trực tiếp mở kiểm tra Azota và K12Online, tôi thấy các nền tảng nội địa đã giải quyết rất tốt khâu chấm thi và lên bảng điểm, nhưng lại bỏ ngỏ đúng "dặm cuối" là chuyển hóa mã câu sai thành lời nhận xét sư phạm 3 phần. Nhờ phát hiện này, nhóm hoàn toàn bỏ ý định xây hệ thống lớn mà chỉ thiết kế một Workflow gọn nhẹ chạy trên Google Sheets.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Phần khó nhất với tôi là cân bằng giữa tốc độ và chất lượng trong **Success Metric**, đồng thời thiết lập **Boundary** sao cho an toàn tuyệt đối với môi trường học đường. Ở bản v0, nhóm chỉ đưa vào mục tiêu giảm thời gian từ 315 phút xuống dưới 120 phút. Khi rà soát lại để lên bản v1, tôi nhận ra nếu chỉ tối ưu số phút thì AI có thể phóng bút rất nhanh nhưng sinh ra nhận xét vô hồn hoặc nhầm dữ liệu, khiến giáo viên phải xóa đi gõ lại còn cực hơn cũ. Việc thiết kế thêm hai thước đo kiểm chứng được — tỉ lệ bản nháp phải viết lại từ đầu dưới 15% và khảo sát 1 câu với phụ huynh đạt trên 80% thấy rõ phần con cần ôn — kèm theo quy tắc tách họ tên thật của học sinh ra khỏi dữ liệu gửi cho AI là bước đòi hỏi nhóm phải tranh luận kỹ lưỡng nhất.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu làm lại từ đầu, ở phần cá nhân CP1–CP2 tôi sẽ chọn quét vấn đề ngay trong quy trình làm việc/học tập hằng ngày mà tôi có sẵn lịch sử bấm giờ hoặc hỏi được người trong cuộc ngay lập tức, tránh chọn domain xây dựng gián tiếp khiến mọi chỉ số dừng ở mức giả thuyết. Ở phần nhóm, tôi sẽ phản biện gắt gao hơn ở hai điểm: một là yêu cầu đo bấm giờ thực tế ít nhất 5–10 học sinh mẫu để kiểm chứng con số ước lượng 170 phút viết nhận xét và 35 phút đọc duyệt (vì 30 giây đọc và sửa một nhận xét cho 70 em liên tục vẫn có nguy cơ gây mỏi mắt, đọc lướt); hai là rà soát kỹ kịch bản câu hỏi phỏng vấn trước khi đi hỏi để tránh lọt câu hỏi giả định *"Nếu có tiện ích... nhà trường có cho phép không?"* trong buổi gặp tổ trưởng chuyên môn, giúp bằng chứng Viability vững chắc hơn ngay từ CP4.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán của nhóm tập trung vào nỗi đau của giáo viên Toán THPT (đại diện là GV-A phụ trách 2 lớp, 70 học sinh) khi mỗi chu kỳ kiểm tra 2 tuần phải mất 315 phút, trong đó nghẽn nặng nhất ở khâu cân bằng 3 mã đề (45 phút) và tra lịch sử lỗi sai để gõ nhận xét cá nhân hóa cho 70 em (170 phút), khiến giáo viên kiệt sức phải copy câu mẫu còn phụ huynh không biết con hổng phần nào để kèm cặp. Trong quy trình tương lai 6 bước (kỳ vọng còn 115 phút), giáo viên vẫn trực tiếp chấm bài và nhập mã câu sai (65 phút), hệ thống dùng Rule tự động sinh 3 mã đề chuẩn hóa (5 phút) và ánh xạ câu sai sang mã kỹ năng kèm điểm kỳ trước (2 phút), tiếp đó AI soạn nháp 70 nhận xét theo cấu trúc 3 phần (3 phút) để giáo viên rà soát chỉnh sửa (35 phút) rồi tự bấm gửi (5 phút). Hiệu quả được đo lường bằng 3 chỉ số: giảm tổng thời gian từ 315 phút xuống dưới 120 phút/chu kỳ, tỉ lệ bản nháp giáo viên phải viết lại dưới 15%, và trên 80% phụ huynh lớp pilot xác nhận nhận xét chỉ rõ nội dung con cần ôn. Về ranh giới an toàn (Boundary), AI chỉ được nhận mã học sinh cùng mã câu sai (tên thật do Rule ghép sau), tuyệt đối không tự sửa điểm, không bịa lỗi ngoài danh sách câu sai, không dùng từ ngữ phán xét nhân cách và không được tự động gửi tin cho phụ huynh. Nhóm chọn mức can thiệp **Workflow** có con người kiểm duyệt (Rule ở Bước 1, 3 và AI ở duy nhất Bước 4) vì câu mẫu No AI hay ghép chuỗi Rule đơn thuần đều khô cứng không nối được sự tiến bộ giữa hai kỳ, trong khi Agent tự hành lại quá rủi ro về phát ngôn sư phạm trên một quy trình vốn đã cố định. Do cả 4 rủi ro (Value, Usability, Feasibility, Viability) đều ở mức Trung bình và kiểm chứng nhanh được, nhóm quyết định **Go phạm vi nhỏ**: chạy pilot 4 tuần (2 đợt kiểm tra) trên 1 lớp 35 học sinh bằng Google Sheets và prompt chuẩn sau khi có xác nhận của nhà trường, kèm ngưỡng dừng tức khắc nếu tỉ lệ viết lại vượt 35% hoặc xảy ra dù chỉ 1 lỗi ảo giác sai điểm số/kiến thức.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+1. Chính phủ (2021) — *Nghị định 06/2021/NĐ-CP quy định chi tiết một số nội dung về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng* (cơ sở pháp lý cho CP1 & CP2 phần cá nhân).
+2. Báo cáo nhóm Nhom5W: [group_report.md](../team/group_report.md), hồ sơ phân công [TEAM.md](../../TEAM.md) và 3 biên bản phỏng vấn CP4 ([snapshot 1](../assets/cp4-interview-snapshot-1.md), [snapshot 2](../assets/cp4-interview-snapshot-2.md), [snapshot 3](../assets/cp4-interview-snapshot-3.md)).
+3. Rob Fitzpatrick — *The Mom Test*: https://www.momtestbook.com/
+4. Teresa Torres — *Opportunity Solution Trees*: https://www.producttalk.org/opportunity-solution-trees/
+5. Google PAIR — *People + AI Guidebook (User Needs & Mental Models)*: https://pair.withgoogle.com/chapter/user-needs/
+6. Anthropic — *Building Effective Agents*: https://www.anthropic.com/research/building-effective-agents
+7. Marty Cagan (SVPG) — *The Four Big Risks*: https://www.svpg.com/four-big-risks/
+8. Các nền tảng đối chiếu trong phần Research nhóm (kiểm tra ngày 09/11/2026): https://azota.vn/, https://k12online.vn/, https://www.khanacademy.org/, https://chatgpt.com/

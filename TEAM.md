@@ -34,7 +34,32 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP6 — Mức can thiệp + Problem Statement v1 | Nguyễn Thành Tâm | Lê Tuấn Đạt | Ma trận độ mơ hồ × phức tạp, 4 mức can thiệp (bác bỏ Agent tự hành), AI Canvas, Google PAIR, Problem Statement v1, Bộ 10 test case eval |
 | CP6 — Quyết định | Nguyễn Huy Tấn | Nguyễn Thành Tâm, Lê Tuấn Đạt | Bảng chấm 4 rủi ro (Value, Usability, Feasibility, Viability), quyết định Go Pilot 4 tuần và 3 ngưỡng dừng |
 ---
-###phần của tâm
+
+### NguyenThanhTam-2A202603933
+
+**Phần việc phụ trách:**
+- Đảm nhận vai trò **Nhóm trưởng**: fork repo nhóm, phân công nhiệm vụ.
+- Phụ trách chính **CP3 (Hội tụ nhóm)**: gom cluster, xây dựng cây Opportunity Solution Tree (OST) rút gọn, thiết lập ma trận chấm điểm lựa chọn đề tài.
+- Phụ trách chính **CP6 (Mức can thiệp AI & Problem Statement v1)**: phân tích ma trận Độ mơ hồ × Độ phức tạp, bảng so sánh 4 mức AI, AI Canvas, 2 câu hỏi Google PAIR, nâng cấp Problem Statement v1 và xây dựng Test Case.
+- Hỗ trợ kiểm chứng chéo phần Research thị trường (CP4), phản biện và chỉnh sửa các gợi ý quá đà/ảo giác của AI ở Quy trình & Problem Statement v0 (CP5), rà soát bảng 4 rủi ro + ngưỡng dừng (CP6).
+- Hoàn thiện toàn bộ báo cáo cá nhân `report/individual/2A202603933_NguyenThanhTam.md`.
+
+**Đóng góp cụ thể:**
+- Trình bày 3 Problem Cards lĩnh vực xây dựng và đặt 3 câu hỏi phản biện cho thành viên nhóm và định hình ngưỡng dừng pilot của nhóm.
+- Gom 9 candidate từ 3 bối cảnh khác nhau về 4 cluster theo bản chất thao tác, vẽ sơ đồ Mermaid cây OST rút gọn, lọc bỏ 4 ý tưởng "solution đội lốt opportunity" và cùng nhóm bác bỏ gợi ý giữ mô hình OCR + Deep Learning của AI để cắt hẳn tính năng OCR sau phỏng vấn GV-A.
+- Cùng Đạt phân tích `azota.vn` và `k12online.vn`, phát hiện và gạch bỏ nhận định bị **ảo giác** của AI (khi AI nói quá rằng hai nền tảng này đã có sẵn AI viết nhận xét cá nhân hóa gửi phụ huynh); bác bỏ các đề xuất lệch của AI ở CP5.
+- Phân tích và lập luận bác bỏ gợi ý dùng **Autonomous Agent** tự hành của AI để chốt kiến trúc **Workflow (Human-in-the-loop)**.
+- Nâng cấp Problem Statement: bổ sung 2 chỉ số chất lượng, bổ sung cơ chế ẩn danh PII vào Boundary và thiết kế Test Case bám sát 4 tiêu chí đánh giá.
+
+**Bằng chứng:**
+- `report/team/group_report.md`.
+- File báo cáo cá nhân `report/individual/2A202603933_NguyenThanhTam.md`.
+- Lịch sử quản lý nhánh, merge PR và Git commit của tài khoản `ngthanhtamtb`.
+
+**Điều mình học được từ phần nhóm:**
+- Khách quan khi làm Discovery: dù tôi đã có kinh nghiệm trong domain và lựa chọn kỹ cho 3 Problem Cards ngành xây dựng, khi các bạn phản biện về nguồn gốc số liệu `[GT]` và khả năng tiếp cận người thật trong thời gian lab, tôi học được cách gác lại kinh nghiệm cá nhân để đồng thuận chọn bài toán GV-A có bằng chứng phỏng vấn thực tế.
+- Lưu ý trước các gợi ý "ham tự động hóa" của AI và biết tách bạch **Rule** với **AI**: khi làm bài, AI liên tục xuôi theo hướng làm quá tay, thậm chí bịa tính năng của công cụ có sẵn. Người làm sản phẩm phải dựa vào bằng chứng phỏng vấn thật để khóa chặt dữ liệu đúng/sai bằng Rule, chỉ đặt AI vào đúng một phần trong chuyển ngữ sư phạm (Workflow) và giữ vững chốt chặn kiểm duyệt của giáo viên.
+
 ---
 
 ### LeTuanDat-2A202603949
