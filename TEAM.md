@@ -61,5 +61,24 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 ---
 
-###phần của tấn
----
+
+**Nguyễn Huy Tấn — 2A202603925
+
+**Phần việc phụ trách**
+
+- Lập Assumption Map, phụ trách kiểm chứng bằng phỏng vấn The Mom Test và tổng hợp tín hiệu xác nhận, phản bác (CP4).
+- Hỗ trợ đối chiếu quy trình trước/sau với kết quả phỏng vấn (CP5) và phụ trách đánh giá bốn rủi ro để chốt quyết định thử nghiệm (CP6).
+
+**Đóng góp cụ thể**
+
+- Trình bày ba Problem Card về thông báo rải rác qua bốn kênh, đối chiếu bài lab với rubric và tìm lại câu trả lời cũ trên Discord. Với card thông báo, mình đặt câu hỏi liệu vấn đề còn tồn tại nếu mọi thay đổi được cập nhật trên một kênh chính thức (CP3).
+- Lập bản đồ năm giả định, ưu tiên kiểm chứng thời gian giáo viên dành cho nhận xét, nhu cầu của phụ huynh về thông tin kỹ năng và điều kiện nhà trường cho phép dùng AI. Mình tổng hợp ba biên bản phỏng vấn với giáo viên bộ môn, tổ trưởng chuyên môn và phụ huynh học sinh lớp 10 (CP4).
+- Từ lời kể của giáo viên, nhóm lấy 170 phút mỗi đợt làm mốc ước tính cho bước tra lỗi sai và viết nhận xét. Kết quả phỏng vấn giúp nhóm bỏ OCR, tập trung vào bản nháp chỉ rõ kỹ năng cần ôn và giữ bước giáo viên duyệt trước khi gửi (CP4–CP5).
+- Đánh giá Value, Usability, Feasibility và Viability đều ở mức trung bình. Cùng nhóm chốt thử nghiệm bốn tuần trên một lớp 35 học sinh, với hai việc cần làm trước khi bắt đầu là kiểm tra mã kỹ năng trong ngân hàng đề và xin xác nhận bằng văn bản từ nhà trường. Mình cùng nhóm xác định ba ngưỡng dừng liên quan đến tỷ lệ bản nháp phải viết lại, lỗi kiến thức hoặc sai điểm, và việc nhà trường không cho phép dùng AI (CP6).
+
+**Bằng chứng**
+
+- [Báo cáo cá nhân CP1–CP2](report/individual/2A202603925_NguyenHuyTan.md).
+- [Báo cáo nhóm](report/team/group_report.md), mục 2.1 (pitch), 3.1–3.2 (kiểm chứng), 4 (quy trình) và 8 (rủi ro, quyết định).
+- Biên bản phỏng vấn [giáo viên bộ môn](report/assets/cp4-interview-snapshot-1.md), [tổ trưởng chuyên môn](report/assets/cp4-interview-snapshot-2.md) và [phụ huynh](report/assets/cp4-interview-snapshot-3.md).
+
