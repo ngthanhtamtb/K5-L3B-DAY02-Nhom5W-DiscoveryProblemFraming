@@ -33,27 +33,33 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | CP5 — Problem Statement v0 | Lê Tuấn Đạt | Nguyễn Thành Tâm | Bản Problem Statement v0 kèm phản biện lỗ hổng metric & chặn phình phạm vi (scope creep) từ AI |
 | CP6 — Mức can thiệp + Problem Statement v1 | Nguyễn Thành Tâm | Lê Tuấn Đạt | Ma trận độ mơ hồ × phức tạp, 4 mức can thiệp (bác bỏ Agent tự hành), AI Canvas, Google PAIR, Problem Statement v1, Bộ 10 test case eval |
 | CP6 — Quyết định | Nguyễn Huy Tấn | Nguyễn Thành Tâm, Lê Tuấn Đạt | Bảng chấm 4 rủi ro (Value, Usability, Feasibility, Viability), quyết định Go Pilot 4 tuần và 3 ngưỡng dừng |
+---
+###phần của tâm
+---
+
+### LeTuanDat-2A202603949
+
+**Phần việc phụ trách:**
+- Research giải pháp đã có (CP4 Research).
+- Vẽ quy trình trước/sau (CP5).
+- Viết Problem Statement v0 và sửa lên v1 (CP5, CP6).
+
+**Đóng góp cụ thể:**
+- Đưa card #1 "Chu kỳ kiểm tra định kỳ và nhận xét tiến trình của GV-A" vào buổi pitch; card được nhóm chọn làm candidate chung (34/35).
+- Tự mở trang chủ 4 công cụ (Azota, K12Online, Khan Academy, ChatGPT) ngày 09/11/2026 và làm bảng research: các công cụ có chấm điểm, thống kê, kênh phụ huynh, nhưng trang chủ không nêu bước soạn nhận xét tiến trình cá nhân hóa.
+- Vẽ quy trình Before (315') và After (115'): Rule ở bước sinh mã đề và ánh xạ câu sai, AI chỉ ở bước soạn nháp nhận xét, giáo viên duyệt và tự gửi.
+- Viết Problem Statement v0 → v1, thêm metric chất lượng và boundary "AI không nhận họ tên học sinh"; tham gia 4 tiêu chí đánh giá và bộ 10 test case (B3).
+
+**Bằng chứng:**
+- `report/team/group_report.md`: mục 3.3 (research), mục 4 (quy trình), mục 5 (v0), mục 7 (v1 + tiêu chí + test case).
+- `report/individual/2A202603949_LeTuanDat.md`.
+- Commit của tài khoản `letuandat131`.
+
+**Điều mình học được từ phần nhóm:**
+- Card đầu tiên của mình có cả OCR chấm bài; sau khi AI phản biện và GV-A nói chấm bài không phải chỗ nghẽn, mình bỏ OCR và chỉ giữ phần sau khi chấm. Bài học: tìm đúng bước nghẽn trước khi nghĩ công cụ.
+- Không phải problem nào cũng cần AI: card thông báo của Tấn giải được bằng một kênh chính thức. AI chỉ nên ở đúng bước mà Rule không làm được, và con người vẫn duyệt cuối.
 
 ---
 
-## Cá nhân
-
-Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
-
-### HoVaTen-MSSV
-
-**Phần việc phụ trách:**
-
--
-
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
--
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
--
-
-**Điều mình học được từ phần nhóm:**
-
--
+###phần của tấn
+---
